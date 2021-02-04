@@ -1,1 +1,1 @@
-# expressjs-api-boilerplate
+# expressjs-app-boilerplate
