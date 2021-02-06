@@ -1,9 +1,9 @@
-const Index = require('../controllers/index')
+const Index = require('../controllers/api/index')
 
 module.exports = function(app){
     /**
      * static URLS to be on top..
      */
-    app.get('/', Index.index)
-    app.post('/', Index.indexPost)
+    app.get('/api', Index.index)
+    app.post('/api', Index.indexPost)
 }
