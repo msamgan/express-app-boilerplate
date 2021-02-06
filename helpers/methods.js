@@ -12,6 +12,7 @@ exports.failResponse = (message) => {
         message: message,
     }
 }
+
 exports.notFountResponse = {
     status: false,
     message: 'Unable to find the requested resource!',
