@@ -1,5 +1,4 @@
 const methods = require('../helpers/methods')
-const ModelName = require('../models/model');
 
 exports.index = async (req, res) => {
     res.render('index', { title: 'Home' });

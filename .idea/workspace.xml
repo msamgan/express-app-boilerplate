@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048d2355-bdcf-443c-8c60-03d040ef1bc7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/uglifycss.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/uglifycss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +84,8 @@
       <workItem from="1612441628390" duration="4242000" />
       <workItem from="1612459758218" duration="1184000" />
       <workItem from="1612602358270" duration="2506000" />
-      <workItem from="1612638355567" duration="6003000" />
+      <workItem from="1612638355567" duration="6375000" />
+      <workItem from="1612681467190" duration="3590000" />
     </task>
     <servers />
   </component>
