@@ -1,4 +1,6 @@
 const Index = require('../controllers/index')
+const Login = require('../controllers/auth/login')
+const Register = require('../controllers/auth/register')
 
 module.exports = function(app){
     /**
@@ -6,4 +8,7 @@ module.exports = function(app){
      */
     app.get('/', Index.index)
     app.post('/', Index.indexPost)
+
+    app.get('/login', Login.index)
+    app.get('/register', Register.index)
 }
