@@ -10,5 +10,8 @@ module.exports = function(app){
     app.post('/', Index.indexPost)
 
     app.get('/login', Login.index)
+    app.post('/login', Login.indexPost)
+
     app.get('/register', Register.index)
+    app.post('/register', Register.indexPost)
 }
