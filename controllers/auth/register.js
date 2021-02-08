@@ -1,6 +1,6 @@
 const methods = require('../../helpers/methods')
 const {sequelize, DataTypes} = require('../../config/connection')
-const User =  new (require('../../models/user')(sequelize, DataTypes))
+const User = (require('../../models/user')(sequelize, DataTypes))
 
 exports.index = async (req, res) => {
     res.render('auth/register', {
@@ -12,18 +12,16 @@ exports.index = async (req, res) => {
 }
 
 exports.indexPost = async (req, res) => {
+    const user = await User.create({
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password,
+    })
 
-    console.log(User)
-    // const user = await User.create([{
-    //     name: req.body.name,
-    //     email: req.body.email,
-    //     password: req.body.password,
-    // }])
-    //
-    // res.send(methods.successResponse(
-    //     'User created',
-    //     {
-    //         user: user
-    //     }
-    // ))
+    res.send(methods.successResponse(
+        'User created',
+        {
+            user: user
+        }
+    ))
 }
