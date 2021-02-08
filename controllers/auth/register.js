@@ -1,7 +1,12 @@
 const methods = require('../../helpers/methods')
 
 exports.index = async (req, res) => {
-    res.render('auth/register', { title: 'Register' });
+    res.render('auth/register', {
+        title: 'Register',
+        helpers: {
+            isPath: value => value === 'register'
+        }
+    });
 }
 
 exports.indexPost = async (req, res) => {

@@ -1,7 +1,12 @@
 const methods = require('../helpers/methods')
 
 exports.index = async (req, res) => {
-    res.render('index', { title: 'Home' });
+    res.render('index', {
+        title: 'Home',
+        helpers: {
+            isPath: value => value === 'home'
+        }
+    });
 }
 
 exports.indexPost = async (req, res) => {

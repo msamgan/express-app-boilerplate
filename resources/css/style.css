@@ -24,6 +24,10 @@ body {
     color: black;
 }
 
+.nav-item a.active {
+    color: #6d6868;
+}
+
 footer {
     border-top: 1px solid #eeeeee;
     padding: 20px;
