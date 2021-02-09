@@ -1,7 +1,6 @@
 const database = require('./database.json')[process.env.NODE_ENV]
-//console.log(database);
-
 const {Sequelize, DataTypes} = require('sequelize')
+
 const sequelize = new Sequelize(
     database.database,
     database.username,

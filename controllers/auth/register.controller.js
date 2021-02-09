@@ -1,17 +1,20 @@
 const methods = require('../../helpers/methods')
 const Controller = require('../controller')
-const {sequelize, DataTypes} = require('../../config/connection')
-const User = (require('../../models/user')(sequelize, DataTypes))
+const User = methods.loadModel('user')
 
 const bcrypt = require('bcrypt');
 const salt = 10
-
-const {validationResult} = require('express-validator');
 
 class RegisterController extends Controller {
     //
 }
 
+/**
+ * render registration form
+ * @param req
+ * @param res
+ * @returns {Promise<void>}
+ */
 RegisterController.index = async (req, res) => {
     res.render('auth/register', {
         title: 'Register',
@@ -21,13 +24,13 @@ RegisterController.index = async (req, res) => {
     });
 }
 
+/**
+ * store registration user.
+ * @param req
+ * @param res
+ * @returns {Promise<void>}
+ */
 RegisterController.indexPost = async (req, res) => {
-    /*const errors = validationResult(req);
-    console.log(errors)
-    if (!errors.isEmpty()) {
-        return res.status(422).json({errors: errors.array()});
-    }*/
-
     req.body.password = bcrypt.hashSync(req.body.password, salt);
     const user = await User.create({
         name: req.body.name,
@@ -38,4 +41,8 @@ RegisterController.indexPost = async (req, res) => {
     res.redirect('/login');
 }
 
+/**
+ *
+ * @type {RegisterController}
+ */
 module.exports = RegisterController

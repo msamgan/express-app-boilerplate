@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048d2355-bdcf-443c-8c60-03d040ef1bc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/index.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth/login.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth/register.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/api/index.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth/register.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth/register.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/validators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <workItem from="1612681467190" duration="6130000" />
       <workItem from="1612763395062" duration="5699000" />
       <workItem from="1612780633433" duration="2740000" />
-      <workItem from="1612849712489" duration="2895000" />
+      <workItem from="1612849712489" duration="4386000" />
     </task>
     <servers />
   </component>

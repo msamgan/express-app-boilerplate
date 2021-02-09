@@ -1,6 +1,11 @@
 const methods = require('../../helpers/methods')
+const Controller = require('../controller')
 
-exports.index = async (req, res) => {
+class IndexController extends Controller {
+    //
+}
+
+IndexController.index = async (req, res) => {
     res.send(methods.successResponse(
         'Express JS API Boiler Plate working like a charm...',
         {
@@ -9,7 +14,7 @@ exports.index = async (req, res) => {
     ))
 }
 
-exports.indexPost = async (req, res) => {
+IndexController.indexPost = async (req, res) => {
     res.send(methods.successResponse(
         'Express JS API Boiler Plate post api working like a charm...',
         {
@@ -18,3 +23,5 @@ exports.indexPost = async (req, res) => {
         }
     ))
 }
+
+module.exports = IndexController
