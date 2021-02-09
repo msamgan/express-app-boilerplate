@@ -1,3 +1,12 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-content {
+    height: 90vh !important;
+    width: 35%;
+}
+
 .main-content h1 {
     margin: auto;
     width: 50%;
@@ -5,7 +14,22 @@
     text-align: center;
 }
 
+.form-title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #eeeeee;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.nav-item a.active {
+    color: #6d6868;
+}
+
 footer {
+    border-top: 1px solid #eeeeee;
     padding: 20px;
     text-align: center;
 }

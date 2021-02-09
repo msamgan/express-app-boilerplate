@@ -3,12 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/style.css"/>
 </head>
 <body>
-<div class="main-content">
+
+<div class="main-content container">
+    {{> header}}
     {{{body}}}
 </div>
+
 {{> footer}}
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/public/js/parsley.min.js"></script>
+<script src="/public/js/main.js"></script>
 </html>

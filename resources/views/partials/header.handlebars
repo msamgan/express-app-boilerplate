@@ -1,0 +1,15 @@
+<header class="mt-3 mb-5">
+    <nav class="">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link {{#if (isPath "home")}} active {{/if}}" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#if (isPath "login")}} active {{/if}}" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#if (isPath "register")}} active {{/if}}" href="/register">Register</a>
+            </li>
+        </ul>
+    </nav>
+</header>
