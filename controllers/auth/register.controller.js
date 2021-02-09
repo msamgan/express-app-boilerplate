@@ -41,8 +41,4 @@ RegisterController.indexPost = async (req, res) => {
     res.redirect('/login');
 }
 
-/**
- *
- * @type {RegisterController}
- */
 module.exports = RegisterController

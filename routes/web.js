@@ -1,13 +1,12 @@
-const Index = require('../controllers/index.controller')
+const IndexController = require('../controllers/index.controller')
 const LoginController = require('../controllers/auth/login.controller')
 const RegisterController = require('../controllers/auth/register.controller')
-const validators = require('../controllers/validators')
 
 module.exports = function(app){
     /**
      * static URLS to be on top..
      */
-    app.get('/', Index.index)
+    app.get('/', IndexController.index)
 
     app.get('/login', LoginController.index)
     app.post('/login', LoginController.indexPost)
