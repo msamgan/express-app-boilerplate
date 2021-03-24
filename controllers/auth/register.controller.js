@@ -1,6 +1,7 @@
 const methods = require('../../helpers/methods')
 const Controller = require('../controller')
-const User = methods.loadModel('user')
+
+const { User } = require('../../models');
 
 const bcrypt = require('bcrypt');
 const salt = 10

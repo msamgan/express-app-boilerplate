@@ -32,13 +32,3 @@ exports.notFountResponse = {
     status: false,
     message: 'Unable to find the requested resource!',
 }
-
-/**
- * loading model class
- * @param model
- * @returns {*}
- */
-exports.loadModel = model => {
-    const {sequelize, DataTypes} = require('../config/connection')
-    return (require('../models/' + model)(sequelize, DataTypes))
-}
