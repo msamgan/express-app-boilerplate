@@ -2,7 +2,7 @@ const IndexController = require('../controllers/index.controller')
 const LoginController = require('../controllers/auth/login.controller')
 const RegisterController = require('../controllers/auth/register.controller')
 
-module.exports = function(app){
+module.exports = function(app, authMiddleware){
     /**
      * static URLS to be on top..
      */
