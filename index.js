@@ -2,7 +2,11 @@ require('dotenv').config();
 
 const express = require('express')
 const expHbs = require('express-handlebars');
+var cookieParser = require('cookie-parser');
+
 const uglifyCss = require('./helpers/uglifycss');
+const errorMiddleware = require('./middleware/error.middleware');
+const authMiddleware = require('./middleware/auth.middleware');
 
 const app = express()
 const port = process.env.PORT
@@ -12,6 +16,9 @@ app.use(express.urlencoded({
     extended: true
 }));
 app.use('/public', express.static(__dirname + '/public'));
+
+// Cookie parser middleware
+app.use(cookieParser());
 
 /**
  * Templating Engine and views configurations
@@ -38,5 +45,8 @@ app.listen(port, () => {
 /**
  * Routes..
  */
-require('./routes/api')(app);
-require('./routes/web')(app);
+require('./routes/api')(app, authMiddleware);
+require('./routes/web')(app, authMiddleware);
+
+// Error Handler middleware
+app.use(errorMiddleware);
